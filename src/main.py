@@ -3,18 +3,16 @@ from starlette.middleware.base import BaseHTTPMiddleware
 import uvicorn
 
 from src.auth.middleware import get_current_user
+from src.auth import routers as auth_router
 
 
 app = FastAPI()
 
+app.include_router(auth_router.router)
+
 @app.get('/')
 async def hello():
     return {"message": "hello"} 
-
-@app.get('/jwt')
-async def get_jwt():
-    raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
 
 app.add_middleware(middleware_class=BaseHTTPMiddleware, dispatch=get_current_user)
 
