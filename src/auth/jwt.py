@@ -37,7 +37,6 @@ class UserInDB(User):
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
-
 # CryptContext로 암호화 한 비밀번호 검증
 def verify_password(plain_password, hashed_password):
     return pwd_context.verify(plain_password, hashed_password)
