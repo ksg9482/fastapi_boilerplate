@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, Request, Response, status, HTTPException
-from src.auth.schemas import SignUpUser, SignUpUserResponse, AuthToken, LoginUser, LoginUserResponse
+from src.auth.schemas import AuthTokens, SignUpUser, SignUpUserResponse, AuthToken, LoginUser, LoginUserResponse
 from src.user.services import UserService
 
 router = APIRouter(tags=['auth'])
@@ -19,3 +19,19 @@ async def login(response:Response, user_login:LoginUser, service: UserService = 
     response.set_cookie(key="access_token",value=f"Bearer {login_tokens.access_token}", httponly=True)
     response.set_cookie(key="refresh_token",value=f"Bearer {login_tokens.refresh_token}", httponly=True)
     return login_tokens
+
+@router.get(
+        '/refresh', 
+        status_code=status.HTTP_200_OK, 
+        tags=['auth'], 
+        response_model=AuthTokens,
+        description="새로운 access_token과 refresh_token을 발급한다."
+)
+async def get_new_tokens(request: Request, response:Response, service: UserService = Depends()):
+    old_access_token = request.cookies['access_token']
+    old_refresh_token = request.cookies['refresh_token']
+    new_tokens = await service.jwt_refresh(old_access_token, old_refresh_token)
+
+    response.set_cookie(key="access_token",value=f"Bearer {new_tokens.access_token}", httponly=True)
+    response.set_cookie(key="refresh_token",value=f"Bearer {new_tokens.refresh_token}", httponly=True)
+    return new_tokens
