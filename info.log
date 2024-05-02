@@ -1,0 +1,1682 @@
+DEBUG:asyncio:Using selector: SelectSelector
+DEBUG:aiosqlite:executing <function connect.<locals>.connector at 0x0000025DE8B8EAC0>
+DEBUG:aiosqlite:operation <function connect.<locals>.connector at 0x0000025DE8B8EAC0> completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000025DE8BB2200>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000025DE8796980>, deterministic=True)
+DEBUG:aiosqlite:operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000025DE8BB2200>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000025DE8796980>, deterministic=True) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000025DE8BB2200>, 'floor', 1, <built-in function floor>, deterministic=True)
+DEBUG:aiosqlite:operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000025DE8BB2200>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE6940>, 'PRAGMA read_uncommitted', [])
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE6940>, 'PRAGMA read_uncommitted', []) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE6940>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE6940>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE6940>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE6940>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000025DE8BB2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000025DE8BB2200>) completed
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE5F40>, 'PRAGMA main.table_info("refresh_tokens")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE5F40>, 'PRAGMA main.table_info("refresh_tokens")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE5F40>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE5F40>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE5F40>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE5F40>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE4840>, 'PRAGMA temp.table_info("refresh_tokens")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE4840>, 'PRAGMA temp.table_info("refresh_tokens")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE4840>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE4840>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE4840>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE4840>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE68C0>, 'PRAGMA main.table_info("users")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE68C0>, 'PRAGMA main.table_info("users")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE68C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE68C0>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE68C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE68C0>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE4840>, 'PRAGMA temp.table_info("users")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE4840>, 'PRAGMA temp.table_info("users")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE4840>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE4840>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE4840>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE4840>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE6040>, 'PRAGMA main.table_info("refresh_tokens")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE6040>, 'PRAGMA main.table_info("refresh_tokens")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE6040>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE6040>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE6040>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE6040>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE4840>, 'PRAGMA temp.table_info("refresh_tokens")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE4840>, 'PRAGMA temp.table_info("refresh_tokens")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE4840>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE4840>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE4840>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE4840>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE6940>, 'PRAGMA main.table_info("users")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE6940>, 'PRAGMA main.table_info("users")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE6940>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE6940>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE6940>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE6940>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000025DE8BB2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE4840>, 'PRAGMA temp.table_info("users")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000025DE8BE4840>, 'PRAGMA temp.table_info("users")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE4840>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000025DE8BE4840>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE4840>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000025DE8BE4840>) completed
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+DEBUG:aiosqlite:executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000025DE8BB2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000025DE8BB2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000025DE8BB2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000025DE8BB2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000025DE8BB2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000025DE8BB2200>) completed
+DEBUG:asyncio:Using selector: SelectSelector
+DEBUG:aiosqlite:executing <function connect.<locals>.connector at 0x00000187ED30EAC0>
+DEBUG:aiosqlite:operation <function connect.<locals>.connector at 0x00000187ED30EAC0> completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x00000187ED332200>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x00000187ECF16980>, deterministic=True)
+DEBUG:aiosqlite:operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x00000187ED332200>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x00000187ECF16980>, deterministic=True) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x00000187ED332200>, 'floor', 1, <built-in function floor>, deterministic=True)
+DEBUG:aiosqlite:operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x00000187ED332200>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED366740>, 'PRAGMA read_uncommitted', [])
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED366740>, 'PRAGMA read_uncommitted', []) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED366740>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED366740>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED366740>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED366740>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x00000187ED332200>) completed
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED365D40>, 'PRAGMA main.table_info("refresh_tokens")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED365D40>, 'PRAGMA main.table_info("refresh_tokens")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED365D40>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED365D40>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED365D40>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED365D40>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED3646C0>, 'PRAGMA temp.table_info("refresh_tokens")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED3646C0>, 'PRAGMA temp.table_info("refresh_tokens")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED3646C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED3646C0>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED3646C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED3646C0>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED3666C0>, 'PRAGMA main.table_info("users")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED3666C0>, 'PRAGMA main.table_info("users")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED3666C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED3666C0>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED3666C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED3666C0>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED3646C0>, 'PRAGMA temp.table_info("users")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED3646C0>, 'PRAGMA temp.table_info("users")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED3646C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED3646C0>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED3646C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED3646C0>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED365E40>, 'PRAGMA main.table_info("refresh_tokens")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED365E40>, 'PRAGMA main.table_info("refresh_tokens")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED365E40>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED365E40>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED365E40>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED365E40>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED3646C0>, 'PRAGMA temp.table_info("refresh_tokens")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED3646C0>, 'PRAGMA temp.table_info("refresh_tokens")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED3646C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED3646C0>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED3646C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED3646C0>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED366740>, 'PRAGMA main.table_info("users")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED366740>, 'PRAGMA main.table_info("users")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED366740>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED366740>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED366740>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED366740>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED3646C0>, 'PRAGMA temp.table_info("users")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED3646C0>, 'PRAGMA temp.table_info("users")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED3646C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000187ED3646C0>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED3646C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED3646C0>) completed
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00140s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED3666C0>, '\nCREATE TABLE users (\n\tid INTEGER NOT NULL, \n\tusername VARCHAR(100) NOT NULL, \n\temail VARCHAR(200) NOT NULL, \n\tpassword VARCHAR(512) NOT NULL, \n\tsalt VARCHAR(100) NOT NULL, \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, \n\tupdated_at DATETIME, \n\tdeleted_at DATETIME, \n\tPRIMARY KEY (id)\n)\n\n', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED3666C0>, '\nCREATE TABLE users (\n\tid INTEGER NOT NULL, \n\tusername VARCHAR(100) NOT NULL, \n\temail VARCHAR(200) NOT NULL, \n\tpassword VARCHAR(512) NOT NULL, \n\tsalt VARCHAR(100) NOT NULL, \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, \n\tupdated_at DATETIME, \n\tdeleted_at DATETIME, \n\tPRIMARY KEY (id)\n)\n\n', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED3666C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED3666C0>) completed
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00031s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED322140>, 'CREATE INDEX ix_users_email ON users (email)', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED322140>, 'CREATE INDEX ix_users_email ON users (email)', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED322140>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED322140>) completed
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00067s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED322140>, 'CREATE INDEX ix_users_id ON users (id)', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED322140>, 'CREATE INDEX ix_users_id ON users (id)', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED322140>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED322140>) completed
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00033s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED322140>, 'CREATE INDEX ix_users_username ON users (username)', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED322140>, 'CREATE INDEX ix_users_username ON users (username)', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED322140>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED322140>) completed
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00177s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED322140>, '\nCREATE TABLE refresh_tokens (\n\tid INTEGER NOT NULL, \n\ttoken VARCHAR(512) NOT NULL, \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, \n\tuser_id INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (token), \n\tFOREIGN KEY(user_id) REFERENCES users (id)\n)\n\n', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED322140>, '\nCREATE TABLE refresh_tokens (\n\tid INTEGER NOT NULL, \n\ttoken VARCHAR(512) NOT NULL, \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, \n\tuser_id INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (token), \n\tFOREIGN KEY(user_id) REFERENCES users (id)\n)\n\n', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED322140>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED322140>) completed
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED322140>, 'CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x00000187ED322140>, 'CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED322140>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000187ED322140>) completed
+INFO:sqlalchemy.engine.Engine:COMMIT
+DEBUG:aiosqlite:executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000187ED332200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000187ED332200>) completed
+DEBUG:asyncio:Using selector: SelectSelector
+DEBUG:aiosqlite:executing <function connect.<locals>.connector at 0x000001B1CEFBEAC0>
+DEBUG:aiosqlite:operation <function connect.<locals>.connector at 0x000001B1CEFBEAC0> completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001B1CEFE2200>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000001B1CEBC6980>, deterministic=True)
+DEBUG:aiosqlite:operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001B1CEFE2200>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000001B1CEBC6980>, deterministic=True) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001B1CEFE2200>, 'floor', 1, <built-in function floor>, deterministic=True)
+DEBUG:aiosqlite:operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001B1CEFE2200>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF016740>, 'PRAGMA read_uncommitted', [])
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF016740>, 'PRAGMA read_uncommitted', []) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF016740>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF016740>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF016740>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF016740>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF015D40>, 'PRAGMA main.table_info("refresh_tokens")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF015D40>, 'PRAGMA main.table_info("refresh_tokens")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF015D40>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF015D40>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF015D40>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF015D40>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0166C0>, 'PRAGMA main.table_info("users")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0166C0>, 'PRAGMA main.table_info("users")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF0166C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF0166C0>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0166C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0166C0>) completed
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00084s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF016840>, '\nDROP TABLE refresh_tokens', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF016840>, '\nDROP TABLE refresh_tokens', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF016840>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF016840>) completed
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00064s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0166C0>, '\nDROP TABLE users', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0166C0>, '\nDROP TABLE users', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0166C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0166C0>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF015E40>, 'PRAGMA main.table_info("refresh_tokens")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF015E40>, 'PRAGMA main.table_info("refresh_tokens")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF015E40>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF015E40>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF015E40>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF015E40>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0166C0>, 'PRAGMA temp.table_info("refresh_tokens")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0166C0>, 'PRAGMA temp.table_info("refresh_tokens")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF0166C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF0166C0>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0166C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0166C0>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF017040>, 'PRAGMA main.table_info("users")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF017040>, 'PRAGMA main.table_info("users")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF017040>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF017040>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF017040>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF017040>) completed
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0166C0>, 'PRAGMA temp.table_info("users")', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0166C0>, 'PRAGMA temp.table_info("users")', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF0166C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B1CF0166C0>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0166C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0166C0>) completed
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00144s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF016840>, '\nCREATE TABLE users (\n\tid INTEGER NOT NULL, \n\tusername VARCHAR(100) NOT NULL, \n\temail VARCHAR(200) NOT NULL, \n\tpassword VARCHAR(512) NOT NULL, \n\tsalt VARCHAR(100) NOT NULL, \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, \n\tupdated_at DATETIME, \n\tdeleted_at DATETIME, \n\tPRIMARY KEY (id)\n)\n\n', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF016840>, '\nCREATE TABLE users (\n\tid INTEGER NOT NULL, \n\tusername VARCHAR(100) NOT NULL, \n\temail VARCHAR(200) NOT NULL, \n\tpassword VARCHAR(512) NOT NULL, \n\tsalt VARCHAR(100) NOT NULL, \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, \n\tupdated_at DATETIME, \n\tdeleted_at DATETIME, \n\tPRIMARY KEY (id)\n)\n\n', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF016840>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF016840>) completed
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0166C0>, 'CREATE INDEX ix_users_id ON users (id)', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0166C0>, 'CREATE INDEX ix_users_id ON users (id)', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0166C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0166C0>) completed
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00031s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0167C0>, 'CREATE INDEX ix_users_email ON users (email)', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0167C0>, 'CREATE INDEX ix_users_email ON users (email)', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0167C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0167C0>) completed
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF014340>, 'CREATE INDEX ix_users_username ON users (username)', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF014340>, 'CREATE INDEX ix_users_username ON users (username)', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF014340>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF014340>) completed
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00137s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0161C0>, '\nCREATE TABLE refresh_tokens (\n\tid INTEGER NOT NULL, \n\ttoken VARCHAR(512) NOT NULL, \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, \n\tuser_id INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (token), \n\tFOREIGN KEY(user_id) REFERENCES users (id)\n)\n\n', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF0161C0>, '\nCREATE TABLE refresh_tokens (\n\tid INTEGER NOT NULL, \n\ttoken VARCHAR(512) NOT NULL, \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, \n\tuser_id INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (token), \n\tFOREIGN KEY(user_id) REFERENCES users (id)\n)\n\n', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0161C0>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF0161C0>) completed
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00043s] ()
+DEBUG:aiosqlite:executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF014340>, 'CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)', ())
+DEBUG:aiosqlite:operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001B1CF014340>, 'CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)', ()) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF014340>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B1CF014340>) completed
+INFO:sqlalchemy.engine.Engine:COMMIT
+DEBUG:aiosqlite:executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+DEBUG:aiosqlite:executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001B1CEFE2200>)
+DEBUG:aiosqlite:operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001B1CEFE2200>) completed
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00091s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00107s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00183s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00052s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00062s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00061s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00153s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00043s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00040s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00136s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00069s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00042s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00171s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00033s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00125s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00049s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00122s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00164s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:b'{"detail":"Not Found"}'
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:b'{"detail":"Not Found"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00033s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00049s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00132s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00043s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00142s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00045s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00056s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00206s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00086s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00040s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00150s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00049s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00029s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00046s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00121s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00125s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00046s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00048s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00138s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00050s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00127s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00032s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00054s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00129s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00050s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00135s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00046s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:2024-05-02 23:10:53.340828
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00058s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00121s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00127s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00046s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:2024-05-02 23:12:12.238506
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00045s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00051s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00126s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00040s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00130s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00044s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:2024-05-02 23:12:37.317018
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00042s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00050s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00162s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00033s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00049s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00125s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:2024-05-02 23:17:39.762371
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00086s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00073s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00104s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00047s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00106s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00045s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00053s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00126s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00033s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00133s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:2024-05-02 23:19:39.381655
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00050s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00130s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00032s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00042s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00118s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:2024-05-02 23:20:14.741025
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00030s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00046s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00115s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00043s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00157s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00046s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:2024-05-02 23:20:28.511982
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00031s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00051s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00124s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00114s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00055s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00050s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00210s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00113s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00058s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00046s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00146s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00033s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00045s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00145s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:2024-05-02 23:29:49.922299
+INFO:root:GET
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:200
+INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00042s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00057s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00155s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00133s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:2024-05-02 23:33:14.698371
+INFO:root:GET
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:200
+INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00078s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00139s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00064s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00053s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00161s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00071s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:2024-05-02 23:34:19.641642
+INFO:root:GET
+INFO:root:http://localhost:8080/
+INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
+INFO:root:200
+INFO:root:b'{"message":"hello"}'

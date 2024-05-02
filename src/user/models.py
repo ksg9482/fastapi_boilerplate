@@ -8,7 +8,7 @@ RefreshToken 저장용 별도 테이블.
 """
 class RefreshToken(Base):
     __tablename__ = "refresh_tokens"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, name="refresh_token_id")
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
     token: Mapped[str] = mapped_column(String(512), unique=True, nullable=False)
     created_at: Mapped[DateTime] = mapped_column(DateTime, server_default=func.now(), nullable=False)
 
@@ -21,7 +21,7 @@ mysql등 DB에 이이 user테이블이 있는 경우가 있기에 만에 하나�
 """
 class User(Base):
     __tablename__ = "users" #db에 이미 user 테이블이 있음. 그래서 users로 변경
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, name="user_id") # DBA가 선호하는 방식으로 알고 있음.
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
     username: Mapped[str] = mapped_column(String(100), index=True)
     email: Mapped[str] = mapped_column(String(200), index=True)
     password: Mapped[str] = mapped_column(String(512)) # hash된 비밀번호. 얼마나 길어질지 모름.
