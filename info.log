@@ -1680,3 +1680,59 @@ INFO:root:http://localhost:8080/
 INFO:root:b'{\r\n    "username":"test_user_name",\r\n    "email":"test_email@test.com",\r\n    "password":"test_Password_1!"\r\n}'
 INFO:root:200
 INFO:root:b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00072s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00144s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00071s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00054s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00049s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00163s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00057s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT

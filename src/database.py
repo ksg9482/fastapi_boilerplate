@@ -7,6 +7,7 @@ aiosqlite - 비동기 연결. (기본적으로 동기연결. asyncio에다가 �
 charset=utf8mb4 - 유니코드 설정. 유니코드 설정하면 sqlalchemy로 문자열 타입으로 매핑하면 유니코드 들어감
 """
 DATABASE_URL = "sqlite+aiosqlite:///database.db?charset=utf8mb4"
+MONGODB_URL = ""
 engine = create_async_engine(DATABASE_URL, echo=True)
 
 AsyncSessionLocal = sessionmaker(
