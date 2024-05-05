@@ -1,14 +1,11 @@
 from fastapi import FastAPI, HTTPException, Request, status, Response
 from starlette.middleware.base import BaseHTTPMiddleware
 import uvicorn
-import logging
-from starlette.background import BackgroundTask
-from datetime import timedelta, datetime
 
 from src.database import Base, engine
 from src.auth.middleware import get_current_user
 from src.auth import routers as auth_router
-from src.logging import logging_middleware
+from src.logging_middleware import logging_middleware
 
 async def app_lifespan(app: FastAPI):
     async with engine.begin() as conn:
@@ -33,5 +30,6 @@ async def hello():
 
 # app.add_middleware(middleware_class=BaseHTTPMiddleware, dispatch=get_current_user)
 app.add_middleware(middleware_class=BaseHTTPMiddleware, dispatch=logging_middleware)
+
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True, reload_dirs=["src"])

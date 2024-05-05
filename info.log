@@ -1736,3 +1736,1644 @@ INFO:sqlalchemy.engine.Engine:[no key 0.00163s] ()
 INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
 INFO:sqlalchemy.engine.Engine:[no key 0.00057s] ()
 INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00048s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00148s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00047s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00049s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00049s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00113s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00029s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00052s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00102s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00032s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00051s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00086s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00031s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00052s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00099s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00026s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00045s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00085s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00030s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00028s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00048s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00107s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00030s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00032s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00104s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00023s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:<src.logging_middleware.logging_form object at 0x0000022837162E10>
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00042s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00058s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00155s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00048s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00044s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00152s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:<src.logging_middleware.logging_form object at 0x0000021466B92C90>
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00045s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00058s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00150s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00049s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00143s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:2024-05-05 18:09:20.083638 - GET - http://localhost:8080/ - b'{\r\n    "userName":"asd",\r\n    "age": 11\r\n}' - 200 - b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00042s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00053s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00159s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00033s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00236s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00054s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00127s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00031s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00127s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00056s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00136s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00047s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00051s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00056s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00163s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00046s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00033s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00062s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00135s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00042s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00042s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00170s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:pymongo.serverSelection:{"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x0000018098E28F40>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 66375ac2a5abdb6fd390b8c9, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "66375ac2a5abdb6fd390b8c9"}, "remainingTimeMS": 30}
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00052s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00134s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00045s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00032s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00167s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00046s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00130s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00033s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00045s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00042s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00124s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00060s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:pymongo.serverSelection:{"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x00000135610D8F40>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 66375b4b8eae269410526e7e, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "66375b4b8eae269410526e7e"}, "remainingTimeMS": 30}
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00047s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00125s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00045s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00053s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00044s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00159s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00051s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00033s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00046s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00119s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00031s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00123s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00032s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00046s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00075s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00204s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00045s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00055s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00055s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00179s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00050s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00125s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00051s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00040s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00147s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00059s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00146s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00042s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00043s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00154s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00032s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00058s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00128s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00045s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00137s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00051s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00165s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00032s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00044s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00121s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:pymongo.serverSelection:{"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x000002F65B8F8F40>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 66378c89e1467461f06cee3f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "66378c89e1467461f06cee3f"}, "remainingTimeMS": 30}
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00050s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00114s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00030s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00123s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00031s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:pymongo.serverSelection:{"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x000002AE789F8F40>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 66378cb416cd99c503909f4b, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "66378cb416cd99c503909f4b"}, "remainingTimeMS": 30}
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00030s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00050s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00135s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00048s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00048s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00131s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00042s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:root:Time: 2024-05-05 22:49:36.014973 - Method: GET - URL: http://localhost:8080/ - Request_Body: b'{\r\n    "userName":"asd",\r\n    "age": 11\r\n}' - Response_Status_Code: 200 - Response_Body: b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00053s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00143s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00029s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00030s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00124s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00048s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00031s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00047s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00138s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00043s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00031s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00134s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00044s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:pymongo.serverSelection:{"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x0000026179408F40>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 66378ebc9ad47aeef318a9d7, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "66378ebc9ad47aeef318a9d7"}, "remainingTimeMS": 30}
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00049s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00126s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00029s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00043s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00130s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00033s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:pymongo.serverSelection:{"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x000001E5564A8F40>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 66378f248e36ba181c8cf37d, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "66378f248e36ba181c8cf37d"}, "remainingTimeMS": 30}
+INFO:root:Time: 2024-05-05 22:52:39.796335 - Method: GET - URL: http://localhost:8080/ - Request_Body: b'{\r\n    "userName":"asd",\r\n    "age": 11\r\n}' - Response_Status_Code: 200 - Response_Body: b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00049s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00134s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00135s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:pymongo.serverSelection:{"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x000001739FEE8F40>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 66378f6c4d7095dfcc095f6a, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "66378f6c4d7095dfcc095f6a"}, "remainingTimeMS": 30}
+INFO:root:Time: 2024-05-05 22:53:51.408128 - Method: GET - URL: http://localhost:8080/ - Request_Body: b'{\r\n    "userName":"asd",\r\n    "age": 11\r\n}' - Response_Status_Code: 200 - Response_Body: b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00051s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00130s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00031s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00129s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00037s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:pymongo.serverSelection:{"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x0000021273EC8F40>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 66378f83f25c51b31f7925ea, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "66378f83f25c51b31f7925ea"}, "remainingTimeMS": 30}
+INFO:root:Time: 2024-05-05 22:54:14.475593 - Method: GET - URL: http://localhost:8080/ - Request_Body: b'{\r\n    "userName":"asd",\r\n    "age": 11\r\n}' - Response_Status_Code: 200 - Response_Body: b'{"message":"hello"}'
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00048s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00131s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00044s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00041s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00154s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00034s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00049s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00142s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00036s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00039s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00136s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00033s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE refresh_tokens
+INFO:sqlalchemy.engine.Engine:[no key 0.00033s] ()
+INFO:sqlalchemy.engine.Engine:
+DROP TABLE users
+INFO:sqlalchemy.engine.Engine:[no key 0.00046s] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("refresh_tokens")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA main.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:PRAGMA temp.table_info("users")
+INFO:sqlalchemy.engine.Engine:[raw sql] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	username VARCHAR(100) NOT NULL, 
+	email VARCHAR(200) NOT NULL, 
+	password VARCHAR(512) NOT NULL, 
+	salt VARCHAR(100) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	updated_at DATETIME, 
+	deleted_at DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00116s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_id ON users (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00038s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_username ON users (username)
+INFO:sqlalchemy.engine.Engine:[no key 0.00029s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_users_email ON users (email)
+INFO:sqlalchemy.engine.Engine:[no key 0.00028s] ()
+INFO:sqlalchemy.engine.Engine:
+CREATE TABLE refresh_tokens (
+	id INTEGER NOT NULL, 
+	token VARCHAR(512) NOT NULL, 
+	created_at DATETIME DEFAULT (CURRENT_TIMESTAMP) NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (token), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+INFO:sqlalchemy.engine.Engine:[no key 0.00134s] ()
+INFO:sqlalchemy.engine.Engine:CREATE INDEX ix_refresh_tokens_id ON refresh_tokens (id)
+INFO:sqlalchemy.engine.Engine:[no key 0.00035s] ()
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:pymongo.serverSelection:{"message": "Waiting for suitable server to become available", "selector": "<function writable_server_selector at 0x0000024EA1608F40>", "operation": "insert", "topologyDescription": "<TopologyDescription id: 6637908f425a5515f6f635ee, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6637908f425a5515f6f635ee"}, "remainingTimeMS": 30}
+INFO:root:Time: 2024-05-05 22:58:41.753898 - Method: GET - URL: http://localhost:8080/ - Request_Body: b'{\r\n    "userName":"asd",\r\n    "age": 11\r\n}' - Response_Status_Code: 200 - Response_Body: b'{"message":"hello"}'

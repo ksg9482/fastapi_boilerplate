@@ -1,5 +1,7 @@
 from sqlalchemy.orm import sessionmaker, as_declarative, declared_attr
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
+from motor.motor_asyncio import AsyncIOMotorClient
+
 
 """
 sqlite - 내장된 sqlite이용.
@@ -7,7 +9,6 @@ aiosqlite - 비동기 연결. (기본적으로 동기연결. asyncio에다가 �
 charset=utf8mb4 - 유니코드 설정. 유니코드 설정하면 sqlalchemy로 문자열 타입으로 매핑하면 유니코드 들어감
 """
 DATABASE_URL = "sqlite+aiosqlite:///database.db?charset=utf8mb4"
-MONGODB_URL = ""
 engine = create_async_engine(DATABASE_URL, echo=True)
 
 AsyncSessionLocal = sessionmaker(
@@ -30,3 +31,10 @@ class Base:
 
 def get_Base():
     return Base
+
+MONGO_URL = "mongodb://localhost:27017"
+mongo_client = AsyncIOMotorClient(MONGO_URL)
+database = mongo_client["fastapi_log"]
+
+def get_mongodb_collection():
+    return database.get_collection("log")
